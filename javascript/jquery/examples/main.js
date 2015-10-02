@@ -2,25 +2,34 @@
   'use strict';
 
   $(document).ready(function() {
-    var $pictures,
+    var pictures,
         $menuLinks = $('#menu a'),
         $title = $('head title'),
         $caption = $('.caption'),
         $img = $('.container img');
 
+    // XML
+    // $.ajax({
+    //   url: 'pictures.xml',
+    //   success: function(data) {
+    //     $pictures = $('picture', data);
+    //   }
+    // });
+
+    // JSON
     $.ajax({
-      url: 'pictures.xml',
+      url: 'pictures.json',
       success: function(data) {
-        $pictures = $('picture', data);
+        pictures = data;
       }
     });
     $menuLinks.click(function(event) {
       event.preventDefault();
       var $index = $menuLinks.index(this);
-      var $picture = $pictures.filter(':eq(' + $index + ')');
-      $img.attr('src', $picture.attr('source'));
-      $caption.text($picture.attr('caption'));
-      $title.text('Galery 1 - ' + $picture.attr('caption'));
+      var picture = pictures[$index].picture;
+      $img.attr('src', picture.source);
+      $caption.text(picture.caption);
+      $title.text('Galery 1 - ' + picture.caption);
     });
   });
 
