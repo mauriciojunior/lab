@@ -5,7 +5,6 @@
     var $pictures,
         $menuLinks = $('#menu a'),
         $title = $('head title'),
-        $image = $('.container img'),
         $caption = $('.caption'),
         $img = $('.container img');
 
