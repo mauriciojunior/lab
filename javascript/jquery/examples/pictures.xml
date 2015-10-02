@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pictures>
+  <picture caption="Picture 1" source="http://lorempixel.com/300/300/sports/1"></picture>
+  <picture caption="Picture 2" source="http://lorempixel.com/300/300/people/1"></picture>
+  <picture caption="Picture 3" source="http://lorempixel.com/300/300/cats/1"></picture>
+  <picture caption="Picture 4" source="http://lorempixel.com/300/300/business/1"></picture>
+</pictures>
