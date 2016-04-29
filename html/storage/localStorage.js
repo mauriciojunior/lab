@@ -16,7 +16,7 @@
 
     console.log('Name', localStorage.getItem('name'))
     console.log('Email', localStorage.getItem('email'))
-    clearInputs();
+    clearInputs()
   }
   function clearInputs() {
     $inputName.value = ''
