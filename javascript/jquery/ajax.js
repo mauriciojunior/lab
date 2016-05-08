@@ -1,5 +1,5 @@
 (function($) {
-  'use strict';
+  'use strict'
 
   $.ajax({
     url: '/path/to/file',
@@ -8,13 +8,12 @@
     data: {param1: 'value1'}
   })
   .done(function() {
-    console.log("success");
+    console.log("success")
   })
   .fail(function() {
-    console.log("error");
+    console.log("error")
   })
   .always(function() {
-    console.log("complete");
-  });
-
-})(jQuery);
+    console.log("complete")
+  })
+})(jQuery)
