@@ -1,7 +1,7 @@
 # my lab
-Repositorio criado para experimentos entre outras coisas
+Repositório criado para experimentos entre outras coisas.
 
-## Repositorios
+## Repositórios
 
 - [HTML](html/) - _Alguns experimentos com HTML._
 - [CSS](css/) - _Experimentos usando CSS._
